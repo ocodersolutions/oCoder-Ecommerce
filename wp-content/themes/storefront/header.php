@@ -1,72 +1,147 @@
-<?php
-/**
- * The header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="content">
- *
- * @package storefront
- */
-
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+<title>Biruang an E-Commerce online Shopping Category Flat Bootstarp responsive Website Template| Home :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Biruang Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstarp-css -->
 <link href="<?php echo get_template_directory_uri();?>/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--// bootstarp-css -->
 <!-- css -->
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/style.css" type="text/css" media="all" />
 <!--// css -->
 <script src="<?php echo get_template_directory_uri();?>/assets/js/news/jquery.min.js"></script>
-<?php wp_head(); ?>
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+<!--/fonts-->
+<!-- dropdown -->
+<script src="<?php echo get_template_directory_uri();?>/assets/js/news/wjquery.easydropdown.js"></script>
+<link href="<?php echo get_template_directory_uri();?>/assets/css/nav.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="<?php echo get_template_directory_uri();?>/assets/js/news/scripts.js" type="text/javascript"></script>
+<!--js-->
+<!--/js-->
+<script src="<?php echo get_template_directory_uri();?>/assets/js/news/easyResponsiveTabs.js" type="text/javascript"></script>
+		    <script type="text/javascript">
+			    $(document).ready(function () {
+			        $('#horizontalTab').easyResponsiveTabs({
+			            type: 'default', //Types: default, vertical, accordion           
+			            width: 'auto', //auto or any width like 600px
+			            fit: true   // 100% fit in a container
+			        });
+			    });
+			   </script>	
+<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/news/move-top.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/news/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
 </head>
-
-<body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<?php
-	do_action( 'storefront_before_header' ); ?>
-
-	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
-		<div class="col-full">
-
-			<?php
-			/**
-			 * Functions hooked into storefront_header action
-			 *
-			 * @hooked storefront_skip_links                       - 0
-			 * @hooked storefront_social_icons                     - 10
-			 * @hooked storefront_site_branding                    - 20
-			 * @hooked storefront_secondary_navigation             - 30
-			 * @hooked storefront_product_search                   - 40
-			 * @hooked storefront_primary_navigation_wrapper       - 42
-			 * @hooked storefront_primary_navigation               - 50
-			 * @hooked storefront_header_cart                      - 60
-			 * @hooked storefront_primary_navigation_wrapper_close - 68
-			 */
-			do_action( 'storefront_header' ); ?>
-
+<body>
+	<!-- header -->
+	<div class="header">
+		<!-- container -->
+		<div class="container">
+			<!-- header-top -->
+			<div class="header-top">
+				<div class="header-logo">
+					<a href="index.html"><img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png" alt="" /></a>
+				</div>
+				<div class="header-right">
+					<ul>
+						<li class="phone">+371 282 20 760</li>
+						<li class="mail"><a href="mailto:example@mail.com">eony321v@gmail.com</a></li>
+						<li class="checkout">
+							<a href="add-to-cart.html">
+								<span class="cart">$ 99.54</span>
+								<span class="check">Checkout</span>
+							</a>
+							<div class="shopping">
+								<h5>Your Shopping Cart is empty.</h5>
+								<p>Give it purpose—fill it with books, movies, mobiles, cameras, toys and fashion jewellery.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- //header-top -->
+			<div class="top-nav">
+				<span class="menu"><img src="<?php echo get_template_directory_uri();?>/assets/images/menu.png" alt=""></span>
+				<ul class="nav">
+					<li class="dropdown1"><a href="index.html">HOME</a>
+						<ul class="dropdown2">
+							<li><a href="single.html">lorem</a></li>
+							<li><a href="single.html">dorem sia</a></li>
+							<li><a href="single.html">erik</a></li>
+							<li><a href="single.html">ipsum padamans</a></li>
+							<li><a href="single.html">behance</a></li>
+						</ul>
+					</li>
+					<li class="dropdown1"><a href="men.html">MEN</a>
+						<ul class="dropdown2">
+							<li><a href="men.html">Clothing</a></li>
+							<li><a href="men.html">Footwear</a></li>
+							<li><a href="men.html">Watches</a></li>
+							<li><a href="men.html">Accessories</a></li>
+						</ul>
+					</li>     
+					<li class="dropdown1"><a href="women.html">WOMEN</a>
+						<ul class="dropdown2">
+							<li><a href="women.html">Ethnic Wear</a></li>
+							<li><a href="women.html">Western Wear</a></li>
+							<li><a href="women.html">All Jewellery</a></li>
+							<li><a href="women.html">Beauty & Wellness</a></li>
+						</ul>
+					</li>              
+					<li class="dropdown1"><a href="women.html">KIDS</a>
+						<ul class="dropdown2">
+							<li><a href="women.html">Clothing</a></li>
+							<li><a href="women.html">Footwear</a></li>
+							<li><a href="women.html">Accessories</a></li>
+						</ul>
+					</li>  
+					<li class="dropdown1"><a href="men.html">SALE</a>
+						<ul class="dropdown2">
+							<li><a href="men.html">Clothing</a></li>
+							<li><a href="men.html">Footwear</a></li>
+							<li><a href="men.html">Watches</a></li>
+							<li><a href="men.html">Accessories</a></li>
+						</ul>
+					</li>  					           
+					<li><a href="about.html">ABOUT US</a></li>            
+					<li><a href="404.html">SUPPORT</a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<form>
+					<input type="text" value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}" required="">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+			<!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.nav").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
 		</div>
-	</header><!-- #masthead -->
-
-	<?php
-	/**
-	 * Functions hooked in to storefront_before_content
-	 *
-	 * @hooked storefront_header_widget_region - 10
-	 */
-	do_action( 'storefront_before_content' ); ?>
-
-	<div id="content" class="site-content" tabindex="-1">
-		<div class="col-full">
-
-		<?php
-		/**
-		 * Functions hooked in to storefront_content_top
-		 *
-		 * @hooked woocommerce_breadcrumb - 10
-		 */
-		do_action( 'storefront_content_top' );
+		<!-- //container -->
+	</div>
+	<!-- //header -->
