@@ -17,7 +17,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="<?php echo get_template_directory_uri();?>/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--// bootstarp-css -->
 <!-- css -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/style.css" type="text/css" media="all" />
 <!--// css -->
 <script src="<?php echo get_template_directory_uri();?>/assets/js/news/jquery.min.js"></script>
 <!--fonts-->
@@ -136,7 +136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="search">
 				<form>
-					<input type="text" value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}" required="">
+					<input type="text" value="Tìm kiếm..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Tìm kiếm...';}" required="">
 				</form>
 			</div>
 			<div class="clearfix"> </div>

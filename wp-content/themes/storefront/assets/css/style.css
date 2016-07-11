@@ -1926,7 +1926,7 @@ ul.navig li:nth-of-type(3) {
 		width: 50%;
 	}
 	.search input[type="text"] {
-	  background: url(assets/images/search.png) no-repeat 0px 18px;
+	  background: url("images/search.png") no-repeat 0px 18px;
 	  padding: 1em .7em .7em 2em;
 	    width: 100%;
 	}
@@ -2140,7 +2140,7 @@ ul.navig li:nth-of-type(3) {
 	color: #7e7f84;
     font-size: 14px;
 }
-
+	
 .fix-slider .nivo-caption {
     position: absolute;
     left: 309px;
@@ -2153,4 +2153,5 @@ ul.navig li:nth-of-type(3) {
     opacity: 0.8;
     overflow: hidden;
     font-size: 40px;
+
  }

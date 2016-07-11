@@ -21,15 +21,14 @@
 				<div class="stores">
 					<h3>Về oE Shop</h3>
 					<ul>
-						<li>Feel free to visit our stores or contact us.</li>
-						<li>1401 South Grand Avenue </li>
-						<li>Hue </li>
-						<li>24124</li>
-						<span>
-						<li class="drive">100 Fairview Drive </li>
-						<li>Hue</li> 
-						<li>rqwerqrqwer </li>
-						</span>
+						<li>SHOP GIÀY OE THỜI TRANG</li>
+						<li>
+							Địa chỉ:
+							1401 South Grand Avenue 
+						</li>
+						<li>Email: lol@gmail.com </li>
+						<li>SĐT: 595959595959</li>
+						
 					</ul>
 				</div>
 				<div class="social-icons white-icons">

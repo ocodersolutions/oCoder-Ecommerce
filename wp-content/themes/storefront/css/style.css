@@ -966,7 +966,7 @@ a.detail1{
 }
 .support-left{
 	float:left;
-	width: 50%;
+	width: 100%;
 }
 .support-left ul{
 	margin:0;
@@ -1926,7 +1926,7 @@ ul.navig li:nth-of-type(3) {
 		width: 50%;
 	}
 	.search input[type="text"] {
-	  background: url(../images/search.png) no-repeat 0px 18px;
+	  background: url(assets/images/search.png) no-repeat 0px 18px;
 	  padding: 1em .7em .7em 2em;
 	    width: 100%;
 	}
@@ -1951,7 +1951,7 @@ ul.navig li:nth-of-type(3) {
 	}
 	.banner-bg {
 	  min-height: 314px;
-		background: url(../images/6.jpg) no-repeat -62px 0px;
+		background: url(assets/images/6.jpg) no-repeat -62px 0px;
 		background-size:cover;
 	}
 	.callbacks_tabs {
@@ -2129,3 +2129,31 @@ ul.navig li:nth-of-type(3) {
 	  background-size: cover;
 	}
 }
+.support-cus .support-left{
+	width: 100%;
+}
+.support-grids ul{
+	padding-left: 0px;
+	list-style: none;
+}
+.support li, .support span{
+	color: #7e7f84;
+    font-size: 14px;
+}
+.banner .nivo-caption {
+	font-family: 'Roboto', sans-serif;
+}
+.fix-slider .nivo-caption {
+    position: absolute;
+    left: 309px;
+    bottom: 114px;
+    background: #000;
+    color: #fff;
+    width: 31%;
+    z-index: 8;
+    padding: 18px 10px;
+    opacity: 0.8;
+    overflow: hidden;
+    font-size: 40px;
+
+ }
