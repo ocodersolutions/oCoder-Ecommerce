@@ -17,19 +17,18 @@
 	<div id="colophon" class="footer" role="contentinfo">
 			<!-- container -->
 		<div class="container">
-			<div class="col-md-4 stores-grid">
+			<div class="col-md-3 stores-grid">
 				<div class="stores">
 					<h3>Về oE Shop</h3>
 					<ul>
 						<li>Feel free to visit our stores or contact us.</li>
 						<li>1401 South Grand Avenue </li>
-						<li>Los Angeles, CA 90015 </li>
-						<li>(213) 748-2411</li>
-
+						<li>Hue </li>
+						<li>24124</li>
 						<span>
 						<li class="drive">100 Fairview Drive </li>
-						<li>Franklin, VA 23851</li> 
-						<li>(757) 569-6100 </li>
+						<li>Hue</li> 
+						<li>rqwerqrqwer </li>
 						</span>
 					</ul>
 				</div>
@@ -42,65 +41,44 @@
 						<li><a href="#" class="rss"></a></li>
 				</div>
 			</div>
-			<div class="col-md-4 blog">
+			<div class="col-md-3 blog">
 				<h3>HỖ TRỢ KHÁCH HÀNG</h3>
-				<a href="#">Justin Bieber confirmed that he is gay.</a>
-				<p>Lorem ipsum dolor sit amet, consectetur
-					adipiscing elit. Donec sed auctor elit.
-				</p>
-				<a href="#">New sexy sport clothes are here!</a>
-				<p>Lorem ipsum dolor sit amet, consectetur
-					adipiscing elit. Donec sed auctor elit.
-				</p>
-				<a href="#">Summer sales are coming!</a>
-				<p>Lorem ipsum dolor sit amet, consectetur
-					adipiscing elit. Donec sed auctor elit.
-				</p>
-			</div>
-			<div class="col-md-4 support">
-				<h3>CÓ THẮC MẮC</h3>
-				<div class="support-grids">
+				<div class="support-grids support-cus">
 					<div class="support-left">
 						<ul>
-							<li><a href="#">Terms & Conditions</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Payment</a></li>
-							<li><a href="#">Refunds</a></li>
-							<li><a href="#">Track Order</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Privacy & Security</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Press</a></li>
-							<li><a href="#">Corporate Information</a></li>
+							<li><a href="#">Chính sách đổi trả</a></li>
+							<li><a href="#">Chính sách bảo hành</a></li>
+							<li><a href="#">Tìm hiểu về mua trả góp</a></li>
+							<li><a href="#">Giao hàng & Thanh toán</a></li>
+							<li><a href="#">Tìm trung tâm bảo hành chính Hãng</a></li>
 						</ul>
 					</div>
-					<div class="support-left support-right">
-						<ul>
-							<li><a href="#">Sizing</a></li>
-							<li><a href="#">Ordering</a></li>
-							<li><a href="#">Shipping</a></li>
-							<li><a href="#">Return Policy</a></li>
-							<li><a href="#">Affiliates</a></li>
-							<li><a href="#">Find A Store </a></li>
-							<li><a href="#">Site Map</a></li>
-							<li><a href="#">Sign Up & Save</a></li>
-						</ul>
-					</div>
+				</div>
+			</div>
+			<div class="col-md-3 support">
+				<h3>CÓ THẮC MẮC</h3>
+				<div class="support-grids tips">
+					<ul> 
+						<li>Bán hàng (8:00 - 22:00) <br> 
+						<span class="hottel">1900 00000.00</span> 
+							Hoặc 
+						<span class="hottel">2342342342343</span><br>
+						 Góp ý, khiếu nại (8:00 - 22:00)<br> 
+						 <span class="hottel">234234324657</span> 
+						 Hoặc <span class="hottel">43542352322</span><br> 
+						 Bảo hành sản phẩm (8:00 - 22:00)<br> <span class="hottel">5464544564562</span></li> </ul>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
-			<!-- <div class="col-md-3 contact">
-				<h3>Contact us</h3>
+			<div class="col-md-3 contact">
+			<h3>NHẬN TIN KHUYẾN MÃI MỚI NHẤT</h3>
 				<form>
 					<input type="text" value="your e-mail..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your e-mail...';}" required="">
 					<textarea value="your text...:" onfocus="if(this.value == 'your text...') this.value='';" onblur="if(this.value == '') this.value='your text...';">your text...</textarea>
 					<input type="submit" value="Send MESSAGE">
 				</form>
-			</div> -->
+			</div>
 			<div class="clearfix"> </div>
-			<div class="copyright">
-				<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>
-			</p>
 		</div>
 		<!-- // container -->
 
