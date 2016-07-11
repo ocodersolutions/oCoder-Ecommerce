@@ -16,7 +16,7 @@ get_header(); ?>
 
 	<div class="banner">
 			<!-- banner Slider starts Here -->
-					<script src="js/responsiveslides.min.js"></script>
+					<script src="<?php echo get_template_directory_uri();?>/js/responsiveslides.min.js"></script>
 					 <script>
 						// You can also use "$(window).load(function() {"
 						$(function () {
