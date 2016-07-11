@@ -31,6 +31,6 @@ get_header(); ?>
 		</div>
 	</div>
 
-<?php
+<?php 
 do_action( 'storefront_sidebar' );
 get_footer();
