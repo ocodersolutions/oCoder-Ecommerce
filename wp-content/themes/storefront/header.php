@@ -25,7 +25,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
 <!--/fonts-->
 <!-- dropdown -->
-<script src="<?php echo get_template_directory_uri();?>/assets/js/news/wjquery.easydropdown.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/assets/js/news/jquery.easydropdown.js"></script>
 <link href="<?php echo get_template_directory_uri();?>/assets/css/nav.css" rel="stylesheet" type="text/css" media="all"/>
 <script src="<?php echo get_template_directory_uri();?>/assets/js/news/scripts.js" type="text/javascript"></script>
 <!--js-->
@@ -118,10 +118,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</li>  
 					<li class="dropdown1"><a href="men.html">SALE</a>
 						<ul class="dropdown2">
-							<li><a href="men.html">Clothing</a></li>
-							<li><a href="men.html">Footwear</a></li>
-							<li><a href="men.html">Watches</a></li>
-							<li><a href="men.html">Accessories</a></li>
+							<li><a href="">Clothing</a></li>
+							<li><a href="">Footwear</a></li>
+							<li><a href="">Watches</a></li>
+							<li><a href="">Accessories</a></li>
 						</ul>
 					</li>  					           
 					<li><a href="about.html">ABOUT US</a></li>            
@@ -145,3 +145,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- //container -->
 </div>
 <!-- //header -->
+<body <?php body_class(); ?>>
+<div id="page" class="hfeed site">
+	
+	
