@@ -17,9 +17,9 @@
 	<div id="colophon" class="footer" role="contentinfo">
 			<!-- container -->
 		<div class="container">
-			<div class="col-md-3 stores-grid">
+			<div class="col-md-4 stores-grid">
 				<div class="stores">
-					<h3>Our Stores</h3>
+					<h3>Về oE Shop</h3>
 					<ul>
 						<li>Feel free to visit our stores or contact us.</li>
 						<li>1401 South Grand Avenue </li>
@@ -42,8 +42,8 @@
 						<li><a href="#" class="rss"></a></li>
 				</div>
 			</div>
-			<div class="col-md-3 blog">
-				<h3>Blog posts</h3>
+			<div class="col-md-4 blog">
+				<h3>HỖ TRỢ KHÁCH HÀNG</h3>
 				<a href="#">Justin Bieber confirmed that he is gay.</a>
 				<p>Lorem ipsum dolor sit amet, consectetur
 					adipiscing elit. Donec sed auctor elit.
@@ -57,8 +57,8 @@
 					adipiscing elit. Donec sed auctor elit.
 				</p>
 			</div>
-			<div class="col-md-3 support">
-				<h3>Support</h3>
+			<div class="col-md-4 support">
+				<h3>CÓ THẮC MẮC</h3>
 				<div class="support-grids">
 					<div class="support-left">
 						<ul>
@@ -89,14 +89,14 @@
 					<div class="clearfix"> </div>
 				</div>
 			</div>
-			<div class="col-md-3 contact">
+			<!-- <div class="col-md-3 contact">
 				<h3>Contact us</h3>
 				<form>
 					<input type="text" value="your e-mail..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your e-mail...';}" required="">
 					<textarea value="your text...:" onfocus="if(this.value == 'your text...') this.value='';" onblur="if(this.value == '') this.value='your text...';">your text...</textarea>
 					<input type="submit" value="Send MESSAGE">
 				</form>
-			</div>
+			</div> -->
 			<div class="clearfix"> </div>
 			<div class="copyright">
 				<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>
