@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- //header-top -->
 			<div class="top-nav">
 				<span class="menu"><img src="<?php echo get_template_directory_uri();?>/assets/images/menu.png" alt=""></span>
-				<ul class="nav">
+				<!--<ul class="nav">
 					<li class="dropdown1"><a href="index.html">HOME</a>
 						<ul class="dropdown2">
 							<li><a href="single.html">lorem</a></li>
@@ -126,7 +126,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</li>  					           
 					<li><a href="about.html">ABOUT US</a></li>            
 					<li><a href="404.html">SUPPORT</a></li>
-				</ul>
+				</ul>-->
+				<?php wp_nav_menu( array(
+				     'theme_location' => 'main-nav', // tên location cần hiển thị
+				     'container' => 'ul', // thẻ container của menu
+				     'container_class' => 'dropdown2', //class của container
+				     'menu_class' => 'nav' // class của menu bên trong
+				) ); ?>
 			</div>
 			<div class="search">
 				<form>
