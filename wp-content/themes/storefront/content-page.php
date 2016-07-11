@@ -6,9 +6,9 @@
  */
 
 ?>
-<?php 
+<!-- <?php 
  	echo do_shortcode("[metaslider id=32]"); 
-?>
+?> -->
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 	/**

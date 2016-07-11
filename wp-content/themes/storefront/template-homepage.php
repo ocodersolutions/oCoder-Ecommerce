@@ -13,100 +13,11 @@
  */
 
 get_header(); ?>
-
 	<div class="banner">
 			<!-- banner Slider starts Here -->
-					<script src="<?php echo get_template_directory_uri();?>/js/responsiveslides.min.js"></script>
-					 <script>
-						// You can also use "$(window).load(function() {"
-						$(function () {
-						  // Slideshow 4
-						  $("#slider3").responsiveSlides({
-							auto: true,
-							pager: true,
-							nav: true,
-							speed: 500,
-							namespace: "callbacks",
-							before: function () {
-							  $('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-							  $('.events').append("<li>after event fired.</li>");
-							}
-						  });
-					
-						});
-					  </script>
-					<!--//End-slider-script -->
-					<div id="top" class="callbacks_container">
-						<ul class="rslides callbacks callbacks1" id="slider3">
-							<li id="callbacks1_s0" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
-								<div class="banner-bg">
-									<div class="container">
-										<div class="banner-info">
-											<h2>RIGHT IS WHITE.<span>LEFT IS BLACK</span></h2>
-											<p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch
-												playmakers, these kicks are ready to stand out.
-											</p>
-											<a href="#">SHOP BRASIL</a>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li id="callbacks1_s1" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
-								<div class="banner-bg banner-img2">
-									<div class="container">
-										<div class="banner-info">
-											<h2>RIGHT IS BLUE.<span>LEFT IS PINK</span></h2>
-											<p>Inspired by bold colors and matching up to football’s on-pitch
-												playmakers, these kicks are ready to stand out.
-											</p>
-											<a href="#">SHOP BRASIL</a>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li id="callbacks1_s2" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
-								<div class="banner-bg banner-img">
-									<div class="container">
-										<div class="banner-info">
-											<h2>RIGHT IS PINK.<span>LEFT IS BLUE</span></h2>
-											<p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch
-												playmakers, these Brasil’s kicks are ready to stand out.
-											</p>
-											<a href="#">SHOP BRASIL</a>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li id="callbacks1_s3" class="callbacks1_on" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out;">
-								<div class="banner-bg">
-									<div class="container">
-										<div class="banner-info">
-											<h2>RIGHT IS WHITE.<span>LEFT IS BLACK</span></h2>
-											<p>Inspired by bold colors and matching up to football’s on-pitch
-												playmakers, these kicks are ready to stand out.
-											</p>
-											<a href="#">SHOP BRASIL</a>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li id="callbacks1_s4" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
-								<div class="banner-bg banner-img2">
-									<div class="container">
-										<div class="banner-info">
-											<h2>RIGHT IS BLUE.<span>LEFT IS PINK</span></h2>
-											<p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch
-												playmakers, these kicks Brasil’s are ready to stand out.
-											</p>
-											<a href="#">SHOP BRASIL</a>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul><a href="#" class="callbacks_nav callbacks1_nav prev">Previous</a><a href="#" class="callbacks_nav callbacks1_nav next">Next</a><ul class="callbacks_tabs callbacks1_tabs"><li class="callbacks1_s1"><a href="#" class="callbacks1_s1">1</a></li><li class="callbacks1_s2"><a href="#" class="callbacks1_s2">2</a></li><li class="callbacks1_s3"><a href="#" class="callbacks1_s3">3</a></li><li class="callbacks1_s4 callbacks_here"><a href="#" class="callbacks1_s4">4</a></li><li class="callbacks1_s5"><a href="#" class="callbacks1_s5">5</a></li></ul>
-					</div>
+			<?php 
+				echo do_shortcode("[metaslider id=32]"); 
+			?>
 	</div>
 
 	<div class="banner-bottom">

@@ -57,7 +57,7 @@
 			</div>
 			<div class="col-md-3 support">
 				<h3>CÓ THẮC MẮC</h3>
-				<div class="support-grids tips">
+				<div class="support-left">
 					<ul> 
 						<li>Bán hàng (8:00 - 22:00) <br> 
 						<span class="hottel">1900 00000.00</span> 
@@ -73,9 +73,8 @@
 			<div class="col-md-3 contact">
 			<h3>NHẬN TIN KHUYẾN MÃI MỚI NHẤT</h3>
 				<form>
-					<input type="text" value="your e-mail..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your e-mail...';}" required="">
-					<textarea value="your text...:" onfocus="if(this.value == 'your text...') this.value='';" onblur="if(this.value == '') this.value='your text...';">your text...</textarea>
-					<input type="submit" value="Send MESSAGE">
+					<input type="text" value="Email của bạn" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your e-mail...';}" required="">
+					<input type="submit" value="Đăng ký">
 				</form>
 			</div>
 			<div class="clearfix"> </div>

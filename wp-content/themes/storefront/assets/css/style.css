@@ -966,7 +966,7 @@ a.detail1{
 }
 .support-left{
 	float:left;
-	width: 50%;
+	width: 100%;
 }
 .support-left ul{
 	margin:0;
@@ -2136,3 +2136,21 @@ ul.navig li:nth-of-type(3) {
 	padding-left: 0px;
 	list-style: none;
 }
+.support li, .support span{
+	color: #7e7f84;
+    font-size: 14px;
+}
+
+.fix-slider .nivo-caption {
+    position: absolute;
+    left: 309px;
+    bottom: 114px;
+    background: #000;
+    color: #fff;
+    width: 31%;
+    z-index: 8;
+    padding: 18px 10px;
+    opacity: 0.8;
+    overflow: hidden;
+    font-size: 40px;
+ }
