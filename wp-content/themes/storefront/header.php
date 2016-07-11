@@ -143,5 +143,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 </script>
 		</div>
 		<!-- //container -->
-	</div>
-	<!-- //header -->
+</div>
+<!-- //header -->

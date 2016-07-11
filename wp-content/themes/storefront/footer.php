@@ -14,32 +14,97 @@
 
 	<?php do_action( 'storefront_before_footer' ); ?>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="col-full">
-			<div class="col-md-4"><?php
-			/**
-			 * Functions hooked in to storefront_footer action
-			 *
-			 * @hooked storefront_footer_widgets - 10
-			 * @hooked storefront_credit         - 20
-			 */
-			do_action( 'storefront_footer' ); ?></div>
-			
-			<div class="col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-			<div class="col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+	<div id="colophon" class="footer" role="contentinfo">
+			<!-- container -->
+		<div class="container">
+			<div class="col-md-3 stores-grid">
+				<div class="stores">
+					<h3>Our Stores</h3>
+					<ul>
+						<li>Feel free to visit our stores or contact us.</li>
+						<li>1401 South Grand Avenue </li>
+						<li>Los Angeles, CA 90015 </li>
+						<li>(213) 748-2411</li>
 
-		</div><!-- .col-full -->
-	</footer><!-- #colophon -->
+						<span>
+						<li class="drive">100 Fairview Drive </li>
+						<li>Franklin, VA 23851</li> 
+						<li>(757) 569-6100 </li>
+						</span>
+					</ul>
+				</div>
+				<div class="social-icons white-icons">
+					<ul>
+						<li><a href="#" class="facebook"></a></li>
+						<li><a href="#" class="twitter"></a></li>
+						<li><a href="#" class="chrome"></a></li>
+						<li><a href="#" class="vimeo"></a></li>
+						<li><a href="#" class="rss"></a></li>
+				</div>
+			</div>
+			<div class="col-md-3 blog">
+				<h3>Blog posts</h3>
+				<a href="#">Justin Bieber confirmed that he is gay.</a>
+				<p>Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit. Donec sed auctor elit.
+				</p>
+				<a href="#">New sexy sport clothes are here!</a>
+				<p>Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit. Donec sed auctor elit.
+				</p>
+				<a href="#">Summer sales are coming!</a>
+				<p>Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit. Donec sed auctor elit.
+				</p>
+			</div>
+			<div class="col-md-3 support">
+				<h3>Support</h3>
+				<div class="support-grids">
+					<div class="support-left">
+						<ul>
+							<li><a href="#">Terms & Conditions</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Payment</a></li>
+							<li><a href="#">Refunds</a></li>
+							<li><a href="#">Track Order</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Privacy & Security</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Corporate Information</a></li>
+						</ul>
+					</div>
+					<div class="support-left support-right">
+						<ul>
+							<li><a href="#">Sizing</a></li>
+							<li><a href="#">Ordering</a></li>
+							<li><a href="#">Shipping</a></li>
+							<li><a href="#">Return Policy</a></li>
+							<li><a href="#">Affiliates</a></li>
+							<li><a href="#">Find A Store </a></li>
+							<li><a href="#">Site Map</a></li>
+							<li><a href="#">Sign Up & Save</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="col-md-3 contact">
+				<h3>Contact us</h3>
+				<form>
+					<input type="text" value="your e-mail..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your e-mail...';}" required="">
+					<textarea value="your text...:" onfocus="if(this.value == 'your text...') this.value='';" onblur="if(this.value == '') this.value='your text...';">your text...</textarea>
+					<input type="submit" value="Send MESSAGE">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="copyright">
+				<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+			</p>
+		</div>
+		<!-- // container -->
+
+	</div><!-- #colophon -->
 
 	<?php do_action( 'storefront_after_footer' ); ?>
 
