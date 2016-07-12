@@ -2157,3 +2157,25 @@ ul.navig li:nth-of-type(3) {
     font-size: 40px;
 
  }
+.products-bottom-left i{
+ 	font-size: 60px;
+ 	color: #f45a40;
+ 	float: left;
+}
+.products-bottom-left h5{
+	display: inline-block;
+}
+.train p{
+	width: 100%;
+	margin: -10px 0px;	
+}
+.train .sub_text{
+	display: inline-block;
+	padding-left: 10px;
+}
+.transport{
+	padding: 2em 0;
+}
+.products-bottom{
+	background: url('../images/4.jpg') no-repeat;
+}
