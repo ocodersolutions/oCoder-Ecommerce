@@ -63,95 +63,54 @@ get_header(); ?>
 				<h3>SẢN PHẨM NỔI BẬT</h3>
 			</div>
 			<div class="products-grids">
-			<!-- 	<div class="col-md-3 product-left-grid">
-				<div class="product-grid">
-					<div class="sap_tabs">	
-						<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-							<div class="resp-tabs-container">
-								<h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span></h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
-									<div class="facts">
-										<img src="<?php echo get_template_directory_uri();?>/assets/images/t1.jpg" class="img-responsive" alt=""> 
-									</div>
-								</div>	
-								<h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span></h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-									<div class="facts">
-										<img src="<?php echo get_template_directory_uri();?>/assets/images/t2.jpg" class="img-responsive" alt="">   
-									</div>
-								</div>	
-								<h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span></h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-									<div class="facts">
-										<img src="<?php echo get_template_directory_uri();?>/assets/images/t3.jpg" class="img-responsive" alt=""> 
-									</div>
-								</div>	         	  
-							</div>
-							<ul class="resp-tabs-list">
-								<li class="resp-tab-item resp-tab-active" aria-controls="tab_item-0" role="tab"><span><img src="<?php echo get_template_directory_uri();?>/assets/images/t1.jpg" class="img-responsive" alt=""></span></li>
-								<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span><img src="<?php echo get_template_directory_uri();?>/assets/images/t2.jpg" class="img-responsive" alt=""></span></li>
-								<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span><img src="<?php echo get_template_directory_uri();?>/assets/images/t3.jpg" class="img-responsive" alt=""></span></li>
-								<div class="clearfix"> </div>
-							</ul>	
-						</div>
-					</div>
-					<div class="products-grid-info">
-						<h3>Nike Tailwind Loose</h3>
-						<h4>Running Tank Top</h4>
-						<p>The Nike Tailwind Loose Women's Running Tank 
-							Top is made with sweat-wicking fabric to help you 
-							stay dry and comfortable on your run.
-						</p>
-						<div class="price">
-							<p>$ 36.99</p>
-						</div>
-						<div class="like">
-							<a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/like.png" alt=""></a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-			</div>
-			 -->
-			<?php
-			 	global $post;
-			 	$recent_posts = get_posts('numberposts=4');
-			 	foreach ($recent_posts as $post) { ?>
-			 		<div class="col-md-3 product-left-grid">
+    		<?php
+	        	$args = array( 'post_type' => 'product', 
+		        	'posts_per_page' => 4, 
+		        	'orderby' => 'DESC' );
+        		$loop = new WP_Query( $args );
+        		while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+        			<div class="col-md-3 product-left-grid">
 						<div class="product-grid">
 							<div class="product-grid-text">
-								<a href="<?php the_permalink();?>">
-									<?php the_post_thumbnail('large', array('class' =>'img-responsive'));?>
+                    			<a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
 								</a>
+                        		<?php woocommerce_show_product_sale_flash( $post, $product ); ?>
+								
+                       			<?php if (has_post_thumbnail( $loop->post->ID )) 
+                       					echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
+                       				else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="300px" height="300px" />'; ?>
 								<div class="products-grid-info">
-									<h3>
-										<a href="<?php the_permalink();?>">
-											<?php the_title();?>
-										</a>
-									</h3>
+                        			<h3><?php the_title(); ?></h3>
 									<h4>
 										<a href="<?php echo get_category_link();?>">
-											<?php echo $post->name?>
+											<?php echo $post->name; ?>
 										</a>
 									</h4>
 									<p>
 										<?php the_excerpt();?>
 									</p>
-									<div class="price">
-										<p>$ 70.00</p>
-									</div>
-									<div class="like">
+		                        	<div class="price">
+		                        		<?php echo $product->get_price_html(); ?>
+		                        	</div>
+		                        	<div class="like">
 										<a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/like.png" alt=""></a>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
-								<div class="plus">
-									<a href="single.html"><img src="<?php echo get_template_directory_uri();?>/assets/images/plus.png" alt=""></a>
-								</div>
-							</div>
-						</div>
-					</div>
-			<?php } ?>
 
-				<div class="clearfix"> </div>
+							<div class="plus">
+								<a href="single.html"><img src="<?php echo get_template_directory_uri();?>/assets/images/plus.png" alt="">
+								</a>
+							</div>
+                    		<?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
+                			</div>
+                		</div>
+                	</div>
+    			<?php endwhile; ?>
+    			<?php wp_reset_query(); ?>
+			
 			</div>
+			<div class="clearfix"> </div>
 		</div>
 		<!-- //container -->
 	</div>
