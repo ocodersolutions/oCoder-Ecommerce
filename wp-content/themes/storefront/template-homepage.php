@@ -112,8 +112,8 @@ get_header(); ?>
 			 -->
 			<?php
 			 	global $post;
-			 	$recent_posts = get_posts('numberposts=8');
-			 	foreach ($$recent_posts as $post) { ?>
+			 	$recent_posts = get_posts('numberposts=4');
+			 	foreach ($recent_posts as $post) { ?>
 			 		<div class="col-md-3 product-left-grid">
 						<div class="product-grid">
 							<div class="product-grid-text">
@@ -148,7 +148,7 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
-			<?php }?>
+			<?php } ?>
 
 				<div class="clearfix"> </div>
 			</div>
