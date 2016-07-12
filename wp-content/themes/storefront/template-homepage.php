@@ -15,7 +15,7 @@
 get_header(); ?>
 	<div class="banner">
 			<!-- banner Slider starts Here -->
-			<?php 
+			<?php 		
 				echo do_shortcode("[metaslider id=32]"); 
 			?>
 	</div>
@@ -24,30 +24,31 @@ get_header(); ?>
 		<div class="container">
 			<div class="banner-bottom-grids">
 				<div class="col-md-4 bottom-grid">
-					<img src="<?php echo get_template_directory_uri();?>/assets/images/3.jpg" alt="">
+					<a href="<?php echo get_permalink(93);?> ">
+						<img src="<?php echo get_template_directory_uri();?>/assets/images/3.jpg" alt="">
+					</a>
+					
 					<div class="bottom-grid-info">
-						<a href="#">GIÀY THỂ THAO</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing,
-							vivamus congue nulla leo, quis imperdiet magna.
-						</p>
+						<a href="<?php echo get_permalink(93);?>">GIÀY NAM</a>
+						
 					</div>
 				</div>
 				<div class="col-md-4 bottom-grid">
-					<img src="<?php echo get_template_directory_uri();?>/assets/images/7.jpg" alt="">
+					<a href="<?php echo get_permalink(95);?> ">
+						<img src="<?php echo get_template_directory_uri();?>/assets/images/4.jpg" alt="">
+					</a>
 					<div class="bottom-grid-info">
-						<a href="#">XU HƯỚNG MỚI</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing,
-							vivamus congue nulla leo, quis imperdiet magna.
-						</p>
+						<a href="<?php echo get_permalink(95);?> ">GIÀY NỮ</a>
+						
 					</div>
 				</div>
 				<div class="col-md-4 bottom-grid">
-					<img src="<?php echo get_template_directory_uri();?>/assets/images/5.jpg" alt="">
+					<a href="<?php echo get_permalink( 84);?>">
+						<img src="<?php echo get_template_directory_uri();?>/assets/images/5.jpg" alt="">
+					</a>
 					<div class="bottom-grid-info">
-						<a href="#">TÚI XÁCH &amp; PHỤ KIỆN</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing,
-							vivamus congue nulla leo, quis imperdiet magna.
-						</p>
+						<a href="<?php echo get_permalink( 84);?>">THỜI TRANG &amp; PHỤ KIỆN</a>
+						
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -59,130 +60,96 @@ get_header(); ?>
 		<!-- container -->
 		<div class="container">
 			<div class="products-heading">
-				<h3>POPULAR PRODUCTS</h3>
+				<h3>SẢN PHẨM NỔI BẬT</h3>
 			</div>
 			<div class="products-grids">
-				<div class="col-md-3 product-left-grid">
-					<div class="product-grid">
-						<div class="sap_tabs">	
-							<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-								<div class="resp-tabs-container">
-									<h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span></h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
-										<div class="facts">
-											<img src="<?php echo get_template_directory_uri();?>/assets/images/t1.jpg" class="img-responsive" alt=""> 
-										</div>
-									</div>	
-									<h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span></h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-										<div class="facts">
-											<img src="<?php echo get_template_directory_uri();?>/assets/images/t2.jpg" class="img-responsive" alt="">   
-										</div>
-									</div>	
-									<h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span></h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-										<div class="facts">
-											<img src="<?php echo get_template_directory_uri();?>/assets/images/t3.jpg" class="img-responsive" alt=""> 
-										</div>
-									</div>	         	  
-								</div>
-								<ul class="resp-tabs-list">
-									<li class="resp-tab-item resp-tab-active" aria-controls="tab_item-0" role="tab"><span><img src="<?php echo get_template_directory_uri();?>/assets/images/t1.jpg" class="img-responsive" alt=""></span></li>
-									<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span><img src="<?php echo get_template_directory_uri();?>/assets/images/t2.jpg" class="img-responsive" alt=""></span></li>
-									<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span><img src="<?php echo get_template_directory_uri();?>/assets/images/t3.jpg" class="img-responsive" alt=""></span></li>
+			<!-- 	<div class="col-md-3 product-left-grid">
+				<div class="product-grid">
+					<div class="sap_tabs">	
+						<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+							<div class="resp-tabs-container">
+								<h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span></h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+									<div class="facts">
+										<img src="<?php echo get_template_directory_uri();?>/assets/images/t1.jpg" class="img-responsive" alt=""> 
+									</div>
+								</div>	
+								<h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span></h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+									<div class="facts">
+										<img src="<?php echo get_template_directory_uri();?>/assets/images/t2.jpg" class="img-responsive" alt="">   
+									</div>
+								</div>	
+								<h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span></h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+									<div class="facts">
+										<img src="<?php echo get_template_directory_uri();?>/assets/images/t3.jpg" class="img-responsive" alt=""> 
+									</div>
+								</div>	         	  
+							</div>
+							<ul class="resp-tabs-list">
+								<li class="resp-tab-item resp-tab-active" aria-controls="tab_item-0" role="tab"><span><img src="<?php echo get_template_directory_uri();?>/assets/images/t1.jpg" class="img-responsive" alt=""></span></li>
+								<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span><img src="<?php echo get_template_directory_uri();?>/assets/images/t2.jpg" class="img-responsive" alt=""></span></li>
+								<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span><img src="<?php echo get_template_directory_uri();?>/assets/images/t3.jpg" class="img-responsive" alt=""></span></li>
+								<div class="clearfix"> </div>
+							</ul>	
+						</div>
+					</div>
+					<div class="products-grid-info">
+						<h3>Nike Tailwind Loose</h3>
+						<h4>Running Tank Top</h4>
+						<p>The Nike Tailwind Loose Women's Running Tank 
+							Top is made with sweat-wicking fabric to help you 
+							stay dry and comfortable on your run.
+						</p>
+						<div class="price">
+							<p>$ 36.99</p>
+						</div>
+						<div class="like">
+							<a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/like.png" alt=""></a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			 -->
+			<?php
+			 	global $post;
+			 	$recent_posts = get_posts('numberposts=8');
+			 	foreach ($$recent_posts as $post) { ?>
+			 		<div class="col-md-3 product-left-grid">
+						<div class="product-grid">
+							<div class="product-grid-text">
+								<a href="<?php the_permalink();?>">
+									<?php the_post_thumbnail('large', array('class' =>'img-responsive'));?>
+								</a>
+								<div class="products-grid-info">
+									<h3>
+										<a href="<?php the_permalink();?>">
+											<?php the_title();?>
+										</a>
+									</h3>
+									<h4>
+										<a href="<?php echo get_category_link();?>">
+											<?php echo $post->name?>
+										</a>
+									</h4>
+									<p>
+										<?php the_excerpt();?>
+									</p>
+									<div class="price">
+										<p>$ 70.00</p>
+									</div>
+									<div class="like">
+										<a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/like.png" alt=""></a>
+									</div>
 									<div class="clearfix"> </div>
-								</ul>	
-							</div>
-						</div>
-						<div class="products-grid-info">
-							<h3>Nike Tailwind Loose</h3>
-							<h4>Running Tank Top</h4>
-							<p>The Nike Tailwind Loose Women's Running Tank 
-								Top is made with sweat-wicking fabric to help you 
-								stay dry and comfortable on your run.
-							</p>
-							<div class="price">
-								<p>$ 36.99</p>
-							</div>
-							<div class="like">
-								<a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/like.png" alt=""></a>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 product-left-grid">
-					<div class="product-grid">
-						<div class="product-grid-text">
-							<a href="single.html"><img src="<?php echo get_template_directory_uri();?>/assets/images/t4.jpg" alt=""></a>
-							<div class="products-grid-info">
-								<h3>Nike g87</h3>
-								<h4>Training Tank Top</h4>
-								<p>The Nike Tailwind Loose Women's Running Tank 
-									Top is made with sweat-wicking fabric to help you 
-									stay dry and comfortable on your run.
-								</p>
-								<div class="price">
-									<p>$ 49.99</p>
 								</div>
-								<div class="like">
-									<a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/like.png" alt=""></a>
+								<div class="plus">
+									<a href="single.html"><img src="<?php echo get_template_directory_uri();?>/assets/images/plus.png" alt=""></a>
 								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="plus">
-								<a href="single.html"><img src="<?php echo get_template_directory_uri();?>/assets/images/plus.png" alt=""></a>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 product-left-grid">
-					<div class="product-grid">
-						<div class="product-grid-text">
-							<a href="single.html"><img src="<?php echo get_template_directory_uri();?>/assets/images/t5.jpg" alt=""></a>
-							<div class="products-grid-info">
-								<h3>Nike I-Beam Swoosh</h3>
-								<h4>Sports Top</h4>
-								<p>The Nike Tailwind Loose Women's Running Tank 
-									Top is made with sweat-wicking fabric to help you 
-									stay dry and comfortable on your run.
-								</p>
-								<div class="price">
-									<p>$ 70.00</p>
-								</div>
-								<div class="like">
-									<a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/like.png" alt=""></a>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="plus">
-								<a href="single.html"><img src="<?php echo get_template_directory_uri();?>/assets/images/plus.png" alt=""></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 product-left-grid">	
-					<div class="product-grid">
-						<div class="product-grid-text">
-							<a href="single.html"><img src="<?php echo get_template_directory_uri();?>/assets/images/t6.jpg" alt=""></a>
-							<div class="products-grid-info">
-								<h3>Nike lux</h3>
-								<h4>Running Top</h4>
-								<p>The Nike Tailwind Loose Women's Running Tank 
-									Top is made with sweat-wicking fabric to help you 
-									stay dry and comfortable on your run.
-								</p>
-								<div class="price">
-									<p>$ 28.49</p>
-								</div>
-								<div class="like">
-									<a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/like.png" alt=""></a>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="plus">
-								<a href="single.html"><img src="<?php echo get_template_directory_uri();?>/assets/images/plus.png" alt=""></a>
-							</div>
-						</div>
-					</div>
-				</div>
+			<?php }?>
+
 				<div class="clearfix"> </div>
 			</div>
 		</div>

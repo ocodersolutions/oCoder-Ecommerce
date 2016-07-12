@@ -69,11 +69,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li class="checkout">
 							<a href="add-to-cart.html">
 								<span class="cart">$ 99.54</span>
-								<span class="check">Checkout</span>
+								<span class="check">Giỏ hàng</span>
 							</a>
 							<div class="shopping">
-								<h5>Your Shopping Cart is empty.</h5>
-								<p>Give it purpose—fill it with books, movies, mobiles, cameras, toys and fashion jewellery.</p>
+								<h5>Giở hàng của bạn đang trống.</h5>
+								<p>Hãy chọn mua một sản phẩm vào giỏ hàng</p>
 							</div>
 						</li>
 					</ul>
