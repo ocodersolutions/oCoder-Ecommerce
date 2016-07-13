@@ -59,6 +59,9 @@ get_header(); ?>
 	<div class="products-grids">
 		<!-- container -->
 		<div class="container">
+
+<?php do_action('echo_test',$title='san pham moi');?>
+
 			<div class="products-heading">
 				<h3>SẢN PHẨM NỔI BẬT</h3>
 			</div>
