@@ -25,7 +25,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php do_action( 'woocommerce_before_mini_cart' ); ?>
-
 <ul class="cart_list product_list_widget <?php echo $args['list_class']; ?>">
 
 	<?php if ( ! WC()->cart->is_empty() ) : ?>
@@ -69,7 +68,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php else : ?>
 
-		<li class="empty"><?php _e( 'No products in the cart.', 'woocommerce' ); ?></li>
+		<div class="shopping"><h5><?php _e( 'Giỏ hàng của bạn hiện đang trống.', 'woocommerce' ); ?></h5><p><?php _e( 'Hãy chọn mua một sản phẩm vào giỏ hàng.', 'woocommerce' ); ?></p></div>
 
 	<?php endif; ?>
 

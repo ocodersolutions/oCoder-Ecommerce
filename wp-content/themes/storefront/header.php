@@ -70,14 +70,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li class="phone">+371 282 20 760</li>
 						<li class="mail"><a href="mailto:example@mail.com">eony321v@gmail.com</a></li>
 						<li class="checkout">
-							<a href="add-to-cart.html">
-								<span class="cart">$ 99.54</span>
+							<a href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>">
+								<span class="cart"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span>
 								<span class="check">Giỏ hàng</span>
 							</a>
-							<div class="shopping">
-								<h5>Giở hàng của bạn đang trống.</h5>
-								<p>Hãy chọn mua một sản phẩm vào giỏ hàng</p>
-							</div>
+							
 						</li>
 					</ul>
 				</div>
