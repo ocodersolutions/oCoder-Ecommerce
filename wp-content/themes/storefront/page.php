@@ -9,7 +9,6 @@
  *
  * @package storefront
  */
-
 get_header(); ?>
 	
 	<div class="main">
