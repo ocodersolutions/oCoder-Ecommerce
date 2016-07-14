@@ -33,12 +33,14 @@ get_header( 'shop' ); ?>
 			<div class="single">
 				<div class="container">
 					<div class="single-grids">
-						<div class="col-md-9">
-						<?php while ( have_posts() ) : the_post(); ?>
+						<div class="row">
+							<div class="col-md-9">
+								<?php while ( have_posts() ) : the_post(); ?>
 
-							<?php wc_get_template_part( 'content', 'single-product' ); ?>
+									<?php wc_get_template_part( 'content', 'single-product' ); ?>
 
-						<?php endwhile; // end of the loop. ?>
+								<?php endwhile; // end of the loop. ?>
+							</div>
 						</div>
 					</div>
 				</div>
