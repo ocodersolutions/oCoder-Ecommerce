@@ -17,6 +17,6 @@
  */
 ?>
 
-<div class="col-md-9 fashions">
+
 	<div class="fashion-section">
 		<div class="fashion-grid1">
