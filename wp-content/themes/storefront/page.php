@@ -9,7 +9,7 @@
  *
  * @package storefront
  */
-get_header(); die();?>
+get_header();?>
 	
 	<div class="main">
 		<div class="container">
