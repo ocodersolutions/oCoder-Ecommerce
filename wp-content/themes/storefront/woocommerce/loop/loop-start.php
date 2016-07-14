@@ -16,4 +16,7 @@
  * @version     2.0.0
  */
 ?>
-<ul class="products">
+
+<div class="col-md-9 fashions">
+	<div class="fashion-section">
+		<div class="fashion-grid1">
