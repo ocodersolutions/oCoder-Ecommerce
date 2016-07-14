@@ -28,7 +28,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 
-<div class="col-md-3 fashion-grid">
+<div class="col-md-4 fashion-grid">
 		
 		<?php
 		/**
