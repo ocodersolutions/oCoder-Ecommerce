@@ -28,7 +28,9 @@ get_header( 'shop' );?>
 		<div class="container">
 			<div class="single-grids">
 				<div class="col-md-9">
-				<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); 
+
+				 echo $post->ID?>
 					<div class="single-left-left">
 						<ul id="etalage" class="etalage" >
 						<?php 
@@ -63,9 +65,9 @@ get_header( 'shop' );?>
 					
 					<div class="single-left-right">
 						<div class="single-left-info">
-							<h3>PRODUCT NAME HERE</h3>
-							<a href="#" class="view">View product details</a>
-							<p>$ 20 <a href="#" class="view">CLICK FOR OFFER</a></p>
+							<h3><?php echo get_the_title($post)?></h3>
+							<a href="<?php the_permalink(); ?>" class="view">View product details</a>
+							<p><?php echo $product->get_price_html();?><a href="#" class="view">CLICK FOR OFFER</a></p>
 						</div>
 						<div class="select-size">
 							<p>Select a size</p>
@@ -76,7 +78,7 @@ get_header( 'shop' );?>
 									 <li><a href="#">XL</a></li>
 								</ul>
 							<div class="buy-now">
-								<a href="#">BYE NOW</a>
+								<a href="#">BUY NOW</a>
 							</div>
 							<div class="wishlist">
 								<a class="play-icon popup-with-zoom-anim" href="#small-dialog2">Add to Wishlist</a>
@@ -148,80 +150,16 @@ get_header( 'shop' );?>
 						<p><?php echo $post->post_content ?> 
 						</p>
 					</div>
-					<div class="related">
-						<h3>RELATED PRODUCTS</h3>
-						<div class="related-grids">
-							<div class="related-grid">
-								<div class="col-md-9 related-left">
-									<div class="col-md-3 related-left-left">
-										<img src="<?php echo get_template_directory_uri();?>/assets/images/c1.jpg" alt="" />
-									</div>
-									<div class="col-md-9 related-left-right">
-										<h5>Vestibulum</h5>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a est at leo dictum 
-											pharetra vel sit amet tellus.
-										</p>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="col-md-3 related-right">
-									<p>$ 19</p>
-									<a href="#">Add to cart</a>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="related-grid">
-								<div class="col-md-9 related-left">
-									<div class="col-md-3 related-left-left">
-										<img src="<?php echo get_template_directory_uri();?>/assets/images/c2.jpg" alt="" />
-									</div>
-									<div class="col-md-9 related-left-right">
-										<h5>Vestibulum</h5>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a est at leo dictum 
-											pharetra vel sit amet tellus.
-										</p>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="col-md-3 related-right">
-									<p>$ 19</p>
-									<a href="#">Add to cart</a>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="related-grid">
-								<div class="col-md-9 related-left">
-									<div class="col-md-3 related-left-left">
-										<img src="<?php echo get_template_directory_uri();?>/assets/images/c3.jpg" alt="" />
-									</div>
-									<div class="col-md-9 related-left-right">
-										<h5>Vestibulum</h5>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a est at leo dictum 
-											pharetra vel sit amet tellus.
-										</p>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="col-md-3 related-right">
-									<p>$ 19</p>
-									<a href="#">Add to cart</a>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-					</div>
+					<?php
+						do_action('shop_related_products');
+					?>
+
 				</div>
 				<div class="col-md-3 side-bar">
 					<div class="categories">
-						<h3>CATEGORIES</h3>
 						<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
+						do_action( 'storefront_sidebar');
+						?>
 						<!-- <ul>
 							<li><a href="#">accessories</a></li>
 							<li><a href="#">basics</a></li>

@@ -107,3 +107,20 @@ function test($title){ ?>
 		<?php	
 }
 add_action('echo_test','test');
+
+function related_Products(){
+	global $product;
+	$args = array(
+			'columns' 			=> 4,
+			'orderby' 			=> 'rand',
+			'post_type'            => 'product',
+			'ignore_sticky_posts'  => 1,
+			'no_found_rows'        => 1,
+			'posts_per_page'       => 4,
+			'post__in'             => $related,
+			'post__not_in'         => array( $product->id )
+		);
+
+	woocommerce_related_products( apply_filters( 'woocommerce_output_related_products_args', $args ) );
+}
+add_action('shop_related_products','related_Products');
